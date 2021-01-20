@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main class="calculator">
+    
+        <h2>Calculadora</h2>
+        <div class="visor">
+            <div id="accumulator" class="acc"></div>
+            <div id="total" class="total" hidden></div>
+        </div>
+        <div class="numeric action" onclick="CleanAll()">C</div>
+        <div class="numeric action" onclick="CleanCurrentEntry()">CE</div>
+        <div class="numeric action" onclick="Percentage()">%</div>
+        <div class="numeric action" onclick="CalcAction('/')">/</div>
+        <div class="numeric" onclick="AddNumber(7)">7</div>
+        <div class="numeric" onclick="AddNumber(8)">8</div>
+        <div class="numeric" onclick="AddNumber(9)">9</div>
+        <div class="numeric action" onclick="CalcAction('x')">x</div>
+        <div class="numeric" onclick="AddNumber(4)">4</div>
+        <div class="numeric" onclick="AddNumber(5)">5</div>
+        <div class="numeric" onclick="AddNumber(6)">6</div>
+        <div class="numeric action" onclick="CalcAction('-')">-</div>
+        <div class="numeric" onclick="AddNumber(1)">1</div>
+        <div class="numeric" onclick="AddNumber(2)">2</div>
+        <div class="numeric" onclick="AddNumber(3)">3</div>
+        <div class="numeric action" onclick="CalcAction('+')">+</div>
+        <div class="numeric zero" onclick="AddNumber(0)">0</div>
+        <div class="numeric" onclick="AddComma()">,</div>
+        <div class="numeric action result" onclick="Result()">=</div>
+    </main>    
+
+   <!--footer>
+    <p><a href="https://github.com/vitorlohan" target="_blank">MATOS DEV.</a></p>
+   </footer--> 
+</body>
+<script src="calculadora.js"></script>
+</html>
